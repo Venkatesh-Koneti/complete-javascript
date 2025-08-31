@@ -88,7 +88,9 @@ click on view page source.
 ![Light Bulb Example](/week%20-%201//day%20-%201/images/bulb_example.png)
 
 Practiced Code:
-[Hello World Program](/week%20-%201/day%20-%201/index.html) 
+[Day - 1 Complete Code](/week%20-%201/day%20-%201/index.html) 
+
+--- 
 
 **Day 2**
 - Primitive vs Reference data types  
