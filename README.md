@@ -76,8 +76,56 @@ click on view page source.
   2. Internal Scripting  
   3. External Scripting  
 - Let’s write a simple JavaScript inline scripting program to display Hello World! in webpage.
-- Let’s write light on/off functionality using JavaScript Program. Here image should come 
+- Let’s write light on/off functionality using JavaScript Program.
 ![Light Bulb Example](/week%20-%201//day%20-%201/images/bulb_example.png)
+
+#### Internal Scripts
+- If we write JavaScript in a html file with script tag, then we will call it
+as internal scripting.
+- It usually looks like this <script>....JavaScript code...</script>
+- Let’s write a JavaScript Program Internal Scripting for dark theme and light theme functionality.
+![Theme Example](/week%20-%201//day%20-%201/images/theme.png)
+
+#### External Scripts
+- If we write JavaScript in a separate file with extension .js, then we will call it as **external scripting**.
+- Example: Let’s assume the JavaScript file name is index.js
+    ```javascript
+    // JavaScript code
+    alert("Hello World!");
+    ```
+- If we include third-party scripts like **jQuery, React, Bootstrap** (via CDN links), which are faster to load, then it is called **third-party scripting**.
+- jQuery, React, Bootstrap, Vue, Angular etc., are the frameworks built using JavaScript.
+- TypeScript is the sibling to JavaScript which can’t be executed directly in the browser unless it converts into plain JavaScript, also called as vanilla JavaScript.
+- Browser supports only HTML,CSS and JAVASCRIPT.
+
+#### JavaScript Comments
+- Comments are always helpful when we see our code later point of time. It is best practice to use comments at necessary places in JavaScript Programs. Writing more comments are bad practice.
+- JavaScript has two types of comments:
+    - 1.Single Line comments using doubt slashes
+    - Example:
+        ```
+            //your comment
+        ```
+    - 2.Mult-line comments using slash star.
+    - Example:
+        ```
+            /* comment
+                one more comment
+            */
+        ```
+
+#### Variables
+JavaScript has 4 different types of variables.
+  - 1.global
+  - 2.var
+  - 3.let
+  - 4.const
+- Global variables can override the browsers variables, so it’s not
+recommended way for creating variables.
+- var is also global variable as well as local variable inside a function.
+- let and const are having block scope, which means they can’t be accessed outside the block. For private data, we will use let and const
+keywords.
+- Const cannot be reassigned, it can be modified for reference data types.
 
 Practiced Code:
 [Day - 1 Complete Code](/week%20-%201/day%20-%201/index.html) 
