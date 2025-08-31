@@ -90,8 +90,8 @@ as internal scripting.
 - If we write JavaScript in a separate file with extension .js, then we will call it as **external scripting**.
 - Example: Let’s assume the JavaScript file name is index.js
     ```javascript
-    // JavaScript code
-    alert("Hello World!");
+        // JavaScript code
+        alert("Hello World!");
     ```
 - If we include third-party scripts like **jQuery, React, Bootstrap** (via CDN links), which are faster to load, then it is called **third-party scripting**.
 - jQuery, React, Bootstrap, Vue, Angular etc., are the frameworks built using JavaScript.
@@ -116,15 +116,13 @@ as internal scripting.
 
 #### Variables
 JavaScript has 4 different types of variables.
-  - 1.global
-  - 2.var
-  - 3.let
-  - 4.const
-- Global variables can override the browsers variables, so it’s not
-recommended way for creating variables.
+1. **Global Variables**
+2. **`var`**
+3. **`let`**
+4. **`const`**
+- Global variables can override the browsers variables, so it’s not recommended way for creating variables.
 - var is also global variable as well as local variable inside a function.
-- let and const are having block scope, which means they can’t be accessed outside the block. For private data, we will use let and const
-keywords.
+- let and const are having block scope, which means they can’t be accessed outside the block. For private data, we will use let and const keywords.
 - Const cannot be reassigned, it can be modified for reference data types.
 
 Practiced Code:
