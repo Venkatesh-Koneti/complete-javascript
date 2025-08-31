@@ -7,12 +7,12 @@ It’s designed for **beginners, college students, and developers** who want to 
 ---
 
 ## Table of Contents
-- Week 1: Introduction, Developer Tools, Basics  
-- Week 2: Fundamentals & Interacting with Users  
-- Week 3: Arrays, Objects, JSON  
-- Week 4: Functions, Generators, Events, Web Storage  
-- Week 5: DOM, Dates, Built-in Methods, jQuery Basics  
-- Week 6: ES6 Features & Object-Oriented Programming  
+- [Week 1: Introduction & Basics](#week-1--introduction--basics)  
+- [Week 2: Fundamentals & Interacting with Users](#week-2--fundamentals--interacting-with-users)  
+- [Week 3: Arrays, Objects, JSON](#week-3--arrays-objects-json)  
+- [Week 4: Functions, Generators, Events, Web Storage](#week-4--functions-generators-events-web-storage)  
+- [Week 5: DOM, Dates, Built-in Methods, jQuery Basics](#week-5--dom-dates-built-in-methods-jquery-basics)  
+- [Week 6: ES6 Features & OOP](#week-6--es6-features--oop)   
 
 ---
 
