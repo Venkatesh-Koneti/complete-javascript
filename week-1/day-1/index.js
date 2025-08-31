@@ -11,6 +11,7 @@ console.log(globalLet);    // let works globally
 console.log(globalConst);  // const works globally
 
 
+
 // 2. Function Scope - Variables declared inside a function can only be accessed inside it
 function functionScope() {
     var functionVar = "I am var inside function";  

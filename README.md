@@ -77,6 +77,7 @@ click on view page source.
   3. External Scripting  
 - Let’s write a simple JavaScript inline scripting program to display Hello World! in webpage.
 - Let’s write light on/off functionality using JavaScript Program.
+
 ![Light Bulb Example](week-1/day-1/images/bulb_example.png)
 
 #### Internal Scripts
@@ -84,6 +85,7 @@ click on view page source.
 as internal scripting.
 - It usually looks like this <script>....JavaScript code...</script>
 - Let’s write a JavaScript Program Internal Scripting for dark theme and light theme functionality.
+
 ![Theme Example](week-1/day-1/images/theme.png)
 
 #### External Scripts
@@ -124,7 +126,7 @@ JavaScript has 4 different types of variables.
 - var is also global variable as well as local variable inside a function.
 - let and const are having block scope, which means they can’t be accessed outside the block. For private data, we will use let and const keywords.
 - Const cannot be reassigned, it can be modified for reference data types.
-<img src="week-1/day-1/images/variables.png" alt="Theme Example" width="300" height="200">
+<img src="week-1/day-1/images/variables.png" alt="Theme Example" width="500" height="500">
 
 ### Practiced Code
 👉 [Day 1 – Full Implementation](week-1/day-1/index.html) 
