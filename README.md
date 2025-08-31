@@ -28,6 +28,7 @@ It’s designed for **beginners, college students, and developers** who want to 
 - `onload` event usage  
 - Comments
 
+-
 
 #### 📘 Introduction to JavaScript  
 - JavaScript is the world's most popular high-level programming language.  
@@ -41,8 +42,6 @@ It’s designed for **beginners, college students, and developers** who want to 
   1. **HTML** → to define the content of web pages.  
   2. **CSS** → to specify the layout of web pages.  
   3. **JavaScript** → to program the behavior of web pages.  
- 
----
 
 #### Environment Setup  
  We have many tools like VS Code, Atom, Notepad++, Notepad etc., for developing JavaScript based applications using the features like automated suggestions, auto closing tags, function references etc.,
@@ -52,8 +51,6 @@ It’s designed for **beginners, college students, and developers** who want to 
 - Atom  
 - Brackets  
 - Notepad++  
-
----
 
 #### Developer Tools
 - Browser has many options to debug the JavaScript applications using developer tools like
@@ -65,18 +62,13 @@ It’s designed for **beginners, college students, and developers** who want to 
   6. **Memory** → to check how much data is consuming by browser.
   7. **Application** → to store temporary and permanent data and many options like styles filtering, color picker etc.
 
----
-
 #### Console
 - Console used to debug JavaScript programs line by line
 - It has many different types such as warn, error, log etc.,
 
----
 #### View Source
 - We can see the source code of the application using this feature. Press CTRL+U to see the source code or right click on browser and
 click on view page source.
-
----
 
 #### First JavaScript Program
 - JavaScript can be written in 3 different ways: 
