@@ -20,11 +20,75 @@ It’s designed for **beginners, college students, and developers** who want to 
 
 ### Week 1 – Introduction & Basics
 **Day 1**
-- What is JavaScript, environment setup  
-- Developer tools, console debugging  
-- Writing the first JS program  
-- Internal / External / Third-party scripts  
-- Comments  
+- What is JavaScript  
+- Environment Setup  
+- Developer Tools (Console, Network, Elements, etc.)  
+- Writing the First JS Program  
+- Internal / External / Inline Scripts  
+- `onload` event usage  
+- Comments
+
+
+#### 📘 Introduction to JavaScript  
+- JavaScript is the world's most popular high-level programming language.  
+- It is an interpreted, dynamically-typed language.  
+- Easy to learn, it’s a cross-platform, object-oriented scripting language used to make webpages interactive (e.g., having complex animations, clickable buttons, popup menus, etc.). It is primarily a client-side language.  
+- There are also more advanced server-side versions of JavaScript such as Node.  
+- It was invented by Brendan Eich in 1995 in 10 days.  
+- ECMAScript is the official name of the JavaScript Language.  
+- Latest version is ECMAScript 2018.  
+- JavaScript is one of the 3 languages all web developers must learn:  
+  1. **HTML** → to define the content of web pages.  
+  2. **CSS** → to specify the layout of web pages.  
+  3. **JavaScript** → to program the behavior of web pages.  
+ 
+---
+
+#### Environment Setup  
+ We have many tools like VS Code, Atom, Notepad++, Notepad etc., for developing JavaScript based applications using the features like automated suggestions, auto closing tags, function references etc.,
+- VS Code 
+- Sublime Text  
+- Komodo Edit
+- Atom  
+- Brackets  
+- Notepad++  
+
+---
+
+#### Developer Tools
+- Browser has many options to debug the JavaScript applications using developer tools like
+  1. **Elements** → to find HTML elements.  
+  2. **Console** → to debug JavaScript console outputs.  
+  3. **Sources** → to check what are the files involved in the application.
+  4. **Network** → to check network calls, website loading time etc..
+  5. **Performance** → to analyze the application overall performance.
+  6. **Memory** → to check how much data is consuming by browser.
+  7. **Application** → to store temporary and permanent data and many options like styles filtering, color picker etc.
+
+---
+
+#### Console
+- Console used to debug JavaScript programs line by line
+- It has many different types such as warn, error, log etc.,
+
+---
+#### View Source
+- We can see the source code of the application using this feature. Press CTRL+U to see the source code or right click on browser and
+click on view page source.
+
+---
+
+#### First JavaScript Program
+- JavaScript can be written in 3 different ways.
+  1.Inline Scripting
+  2.Internal Scripting
+  3.External Scripting.
+- Let’s write a simple JavaScript inline scripting program to display Hello World! in webpage.
+- Let’s write light on/off functionality using JavaScript Program. Here image should come 
+![Light Bulb Example](/week%20-%201//day%20-%201/images/bulb_example.png)
+
+Practiced Code:
+[Hello World Program](/week%20-%201/day%20-%201/index.html) 
 
 **Day 2**
 - Primitive vs Reference data types  

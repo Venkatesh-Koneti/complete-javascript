@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Week - 1, Day -1</title>
+</head>
+
+<body onload="document.getElementById('h1').textContent = 'Hello World!'">
+    <h1 id="h1"></h1>
+
+    <!-- Inline scripting example -->
+    <center>
+        <button onclick="document.getElementById('bulb').src='./images/bulb_on.png'">Turn On Light</button>
+        <img id="bulb" src="./images/bulb_off.png" alt="bulbImage" />
+        <button onclick="document.getElementById('bulb').src='./images/bulb_off.png'">Turn Off Light</button>
+    </center>
+
+    <br /><br /><br />
+
+    <!-- Internal scripting example -->
+    <center>
+        <button onclick="onChangeTheme('black')">Turn On Dark theme</button>
+        <div style="width: 200px; height: 200px; border: 1px solid lightgray; background-color: white;" id="theme">
+        </div>
+        <button onclick="onChangeTheme('white')">Turn On Light theme</button>
+    </center>
+
+    <script>
+        function onChangeTheme(color) {
+            document.getElementById('theme').style.backgroundColor = color;
+        }
+    </script>
+
+    <!-- External scripting example -->
+    <script src="index.js"></script>
+
+</body>
+</html>
