@@ -44,7 +44,7 @@ ___
   3. **JavaScript** → to program the behavior of web pages.  
 
 #### Environment Setup  
- We have many tools like VS Code, Atom, Notepad++, Notepad etc., for developing JavaScript based applications using the features like automated suggestions, auto closing tags, function references etc.,
+ - We have many tools like VS Code, Atom, Notepad++, Notepad etc., for developing JavaScript based applications using the features like automated suggestions, auto closing tags, function references etc.,
 - VS Code 
 - Sublime Text  
 - Komodo Edit
