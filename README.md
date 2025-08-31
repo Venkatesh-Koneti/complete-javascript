@@ -45,12 +45,12 @@ ___
 
 #### Environment Setup  
  - We have many tools like VS Code, Atom, Notepad++, Notepad etc., for developing JavaScript based applications using the features like automated suggestions, auto closing tags, function references etc.,
-- VS Code 
-- Sublime Text  
-- Komodo Edit
-- Atom  
-- Brackets  
-- Notepad++  
+ 1. VS Code 
+ 2. Sublime Text  
+ 3. Komodo Edit
+ 4. Atom  
+ 5. Brackets  
+ 6. Notepad++  
 
 #### Developer Tools
 - Browser has many options to debug the JavaScript applications using developer tools like
