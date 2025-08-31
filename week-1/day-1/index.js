@@ -76,7 +76,7 @@ let redeclareLet = "First let";
 const redeclareConst = "First const";
 // const redeclareConst = "Redeclared const"; Error
 
-console.log("\n♻️ Redeclaration:");
+console.log("\n Redeclaration:");
 console.log(redeclareVar);    // works
 console.log(redeclareLet);    // still first value
 console.log(redeclareConst);  // still first value
