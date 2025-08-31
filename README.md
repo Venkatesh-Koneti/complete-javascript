@@ -128,17 +128,11 @@ It’s designed for **beginners, college students, and developers** who want to 
 ## Note
 This repo is a **learning resource**. You can follow week by week or jump into the topics you need.  
 
----
-
 ## 🤝 Contribution Guidelines  
 Want to improve this repo? Feel free to fork, raise issues, or submit PRs.  
 
----
-
 ## ⭐ Support  
 Give a ⭐️ if this project helped you and try to contribute and share with your developers.
-
----
 
 ## Let's Connect
 [LinkedIn](https://www.linkedin.com/in/venkatesh-koneti)
