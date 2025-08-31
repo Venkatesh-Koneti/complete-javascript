@@ -28,7 +28,7 @@ It’s designed for **beginners, college students, and developers** who want to 
 - `onload` event usage  
 - Comments
 
--
+--
 
 #### 📘 Introduction to JavaScript  
 - JavaScript is the world's most popular high-level programming language.  
