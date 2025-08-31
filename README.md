@@ -116,10 +116,10 @@ as internal scripting.
 
 #### Variables
 JavaScript has 4 different types of variables.
-1. **Global Variables**
-2. **`var`**
-3. **`let`**
-4. **`const`**
+  1. **Global Variables**
+  2. **`var`**
+  3. **`let`**
+  4. **`const`**
 - Global variables can override the browsers variables, so it’s not recommended way for creating variables.
 - var is also global variable as well as local variable inside a function.
 - let and const are having block scope, which means they can’t be accessed outside the block. For private data, we will use let and const keywords.
