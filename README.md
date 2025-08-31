@@ -79,10 +79,10 @@ click on view page source.
 ---
 
 #### First JavaScript Program
-- JavaScript can be written in 3 different ways.
-  1.Inline Scripting
-  2.Internal Scripting
-  3.External Scripting.
+- JavaScript can be written in 3 different ways: 
+  1. Inline Scripting  
+  2. Internal Scripting  
+  3. External Scripting  
 - Let’s write a simple JavaScript inline scripting program to display Hello World! in webpage.
 - Let’s write light on/off functionality using JavaScript Program. Here image should come 
 ![Light Bulb Example](/week%20-%201//day%20-%201/images/bulb_example.png)
