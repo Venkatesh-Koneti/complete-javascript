@@ -77,14 +77,14 @@ click on view page source.
   3. External Scripting  
 - Let’s write a simple JavaScript inline scripting program to display Hello World! in webpage.
 - Let’s write light on/off functionality using JavaScript Program.
-![Light Bulb Example](/week%20-%201//day%20-%201/images/bulb_example.png)
+![Light Bulb Example](week-1/day-1/images/bulb_example.png)
 
 #### Internal Scripts
 - If we write JavaScript in a html file with script tag, then we will call it
 as internal scripting.
 - It usually looks like this <script>....JavaScript code...</script>
 - Let’s write a JavaScript Program Internal Scripting for dark theme and light theme functionality.
-![Theme Example](/week%20-%201//day%20-%201/images/theme.png)
+![Theme Example](week-1/day-1/images/theme.png)
 
 #### External Scripts
 - If we write JavaScript in a separate file with extension .js, then we will call it as **external scripting**.
