@@ -125,8 +125,8 @@ JavaScript has 4 different types of variables.
 - let and const are having block scope, which means they can’t be accessed outside the block. For private data, we will use let and const keywords.
 - Const cannot be reassigned, it can be modified for reference data types.
 
-Practiced Code:
-[Day - 1 Complete Code](/week%20-%201/day%20-%201/index.html) 
+### Practiced Code
+👉 [Day 1 – Full Implementation](week-1/day-1/index.html) 
 
 --- 
 
