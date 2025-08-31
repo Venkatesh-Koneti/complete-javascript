@@ -30,7 +30,7 @@ It’s designed for **beginners, college students, and developers** who want to 
 
 ___
 
-#### 📘 Introduction to JavaScript  
+#### Introduction to JavaScript  
 - JavaScript is the world's most popular high-level programming language.  
 - It is an interpreted, dynamically-typed language.  
 - Easy to learn, it’s a cross-platform, object-oriented scripting language used to make webpages interactive (e.g., having complex animations, clickable buttons, popup menus, etc.). It is primarily a client-side language.  
