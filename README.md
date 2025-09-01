@@ -169,7 +169,7 @@ There are **7 primitive data types** in JavaScript:
 let name = "Venkatesh";
 name.toUpperCase(); // We won’t get the desired output as it won’t mutate.
 name=name.toUpperCase(); // It will give desired output as we are reassigning new value.
-
+```
 ---
 
 ### Week 2 – Fundamentals & Interacting With Users
