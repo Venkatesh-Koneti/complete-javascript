@@ -126,7 +126,7 @@ JavaScript has 4 different types of variables.
 - var is also global variable as well as local variable inside a function.
 - let and const are having block scope, which means they can’t be accessed outside the block. For private data, we will use let and const keywords.
 - Const cannot be reassigned, it can be modified for reference data types.
-<img src="week-1/day-1/images/variables.png" alt="Theme Example" width="500" height="400">
+<img src="week-1/day-1/images/variables.png" alt="Theme Example" width="300" height="300">
 
 ### Practiced Code
 👉 [Day 1 – Full Implementation](week-1/day-1/index.html) 
@@ -142,7 +142,7 @@ JavaScript has 4 different types of variables.
 ___
 
 #### Async and Defer
-<img src="week-1/day-2/images/scriptTagAsyncDefer.png" alt="Async vs Defer" width="400" height="400">
+<img src="week-1/day-2/images/scriptTagAsyncDefer.png" alt="Async vs Defer" width="300" height="300">
 
 #### Data Types in JavaScript
 - Data Types are nothing but the kind of data we want to use, such as strings, numbers, objects, arrays, etc.
