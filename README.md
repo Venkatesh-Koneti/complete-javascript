@@ -134,11 +134,41 @@ JavaScript has 4 different types of variables.
 --- 
 
 **Day 2**
-- Primitive vs Reference data types  
-- Variables  
+- Async and Defer
+- Primitive vs Reference data types    
 - Operators (arithmetic, assignment, comparison, logical)  
 - How JS executes programs  
 - Global object  
+___
+
+#### Async and Defer
+<img src="week-1/day-2/images/scriptTagAsyncDefer.png" alt="Async vs Defer" width="400" height="400">
+
+#### Data Types in JavaScript
+- Data Types are nothing but the kind of data we want to use, such as strings, numbers, objects, arrays, etc.
+- JavaScript is **loosely typed** and **dynamically typed**, meaning we can assign any data type to variables and change them at runtime.
+- JavaScript has **2 types of data types**:
+  1. **Primitive Data Types**
+  2. **Reference (Non-Primitive) Data Types**
+
+#### 1. Primitive Data Types
+There are **7 primitive data types** in JavaScript:
+
+1. `string`  
+2. `number`  
+3. `bigint`  
+4. `boolean`  
+5. `undefined`  
+6. `symbol`  
+7. `null`  
+
+- Primitive values are **immutable**, which means we can **reassign** values but not **mutate**.
+
+**Example:**
+```js
+let name = "Venkatesh";
+name.toUpperCase(); // We won’t get the desired output as it won’t mutate.
+name=name.toUpperCase(); // It will give desired output as we are reassigning new value.
 
 ---
 
