@@ -170,6 +170,62 @@ let name = "Venkatesh";
 name.toUpperCase(); // We won’t get the desired output as it won’t mutate.
 name=name.toUpperCase(); // It will give desired output as we are reassigning new value.
 ```
+
+#### 1.string
+- In any programming language, a String is sequence of characters used to represent text.
+**Example**
+``` let username=“Rajyalakshmi"```
+- We can use the below syntax to create string related data.
+```let username=new String(“Rajyalakshmi”);```
+- new String() is an object, it’s available for all the primitive data types except for null and undefined.
+
+#### 2.number  
+- Number is a numeric data type in double precision of 64 bit floating point format. All the integers, floats, doubles are considered as Number only in JavaScript.
+**Example**
+```
+let slides=5;
+or
+let slides=new Number(5); or Number(5)
+```
+
+#### 3.Bigint
+- BigInt used to represent whole numbers larger than 2^53-1
+**Example**
+```Number.MAX_SAFE_INTEGER```
+
+#### 4.Boolean
+- Boolean is a logical data type that can have only the values true or false.
+**Example**
+```
+let isRunning = true;
+let isRecording = new Boolean(true);
+```
+
+#### 5.Symbol
+- Symbol creates an anonymous, unique value. It can be used as an object property.
+**Example**
+```
+let sym1=Symbol(“name”);
+let sym2=Symbol(“name”);
+console.log(sym1===sym2) // false, as it create a unique value it will be
+```
+
+#### 6.Undefined
+- undefined is a primitive value that will be assigned to variables whenever the variables are declared or which variables doesn’t have initial values.
+**Example**
+```
+let user;
+Console.log(user); //undefined
+```
+
+#### 7.Null
+- Null used to represent a nonexistent or invalid object or address. Null is an object, so we can consider it has both primitive and reference type.
+**Example**
+```
+let user=null;
+console.log(typeof user===“object”) // true
+```
+
 ---
 
 ### Week 2 – Fundamentals & Interacting With Users
