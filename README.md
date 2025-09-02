@@ -210,7 +210,7 @@ let big = 9007199254740995n;
 console.log(typeof big); // "bigint"
 ```
 
-#### 4.Boolean
+#### 4. Boolean
 
 - A boolean can only have two values: true or false.
 - Use primitive booleans instead of new Boolean() unless you explicitly need an object.
@@ -223,7 +223,7 @@ console.log(typeof isRunning);       // "boolean"
 console.log(typeof isRecording);     // "object"
 ```
 
-#### 5.Symbol
+#### 5. Symbol
 - A Symbol creates a unique and immutable value.
 - Even if two symbols have the same description, they are always different.
 - Symbols are often used as object property keys.
@@ -235,7 +235,7 @@ let sym2 = Symbol("name");
 console.log(sym1 === sym2); // false, always unique
 ```
 
-#### 6.Undefined
+#### 6. Undefined
 
 - A variable that is declared but not assigned a value automatically gets undefined.
 - It means "value not assigned".
@@ -246,7 +246,7 @@ let user;
 console.log(user); // undefined
 ```
 
-#### 7.Null
+#### 7. Null
 - Null represents the intentional absence of any value.
 - Interestingly, typeof null returns "object" (a long-standing JavaScript bug).
 
@@ -255,6 +255,83 @@ console.log(user); // undefined
 let user = null;
 console.log(user);             // null
 console.log(typeof user);      // "object"
+```
+
+#### Reference (Non-Primitive) Data Types  
+
+- Reference data types don’t store the actual value directly.  
+- Instead, they **store a reference (memory address)** pointing to the location where the value is kept.  
+- So, when we assign or copy a reference type, we are copying the **memory address**, not the actual value.  
+- The main reference types in JavaScript are:  
+1. `Array`  
+2. `Function`  
+3. `Object`  
+
+**Example (Reference type):**  
+
+| Variable | Address | Value (Object in memory) |
+|----------|---------|--------------------------|
+| user     | 2000    | `{ year: 2021 }`         |
+| customer | 2000    | `{ year: 2021 }`         |
+
+- Here, both `user` and `customer` **refer to the same object in memory (address 2000)**.  
+- Changing one will also affect the other.  
+
+```js
+let user = { year: 2021 };
+let customer = user;
+customer.year = 2022;
+console.log(user.year); // 2022 → because both point to the same memory reference
+```
+
+#### 1. Array
+
+- An **Array** stores multiple values in a single variable.
+- Arrays are **reference types** → assigning them to another variable will point to the same memory location, not create a new copy.
+
+**Example** 
+
+```js
+let names = ["Vivek", "Venkatesh"];
+let users = names;  
+console.log(users);           // ["Vivek", "Venkatesh"]
+console.log(users === names); // true (both point to the same reference)
+```
+
+#### 2. Function
+
+- A **Function** performs a set of statements and can return a value.
+- In JavaScript, functions are objects, which means they can also hold properties.
+
+**Example** 
+
+```js
+function getUser() {
+  return "Venkatesh";
+}
+
+// Adding property because functions are objects
+getUser.username = "Koneti";  
+console.log(getUser.username); // "Koneti"
+console.log(getUser());        // "Venkatesh"
+```
+
+#### 3. Object
+
+- An **Object** stores data in key-value pairs.
+- Like arrays and functions, objects are reference types.
+- When you copy an object, you copy its reference, not the actual data.
+
+**Example** 
+
+```js
+let user = { name: "Venkatesh" };
+let admin = user;  
+admin.role = "Admin";
+
+console.log(user);  // { name: "Venkatesh", role: "Admin" }
+console.log(admin); // { name: "Venkatesh", role: "Admin" }
+console.log(user === admin); // true (both share the same reference)
 ```
 
 ---
