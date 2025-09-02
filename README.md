@@ -106,7 +106,7 @@ alert("Hello World!");
     - 1.Single Line comments using doubt slashes
     - Example:
       ```
-      //your comment
+      // your comment
       ```
     - 2.Mult-line comments using slash star.
     - Example:
