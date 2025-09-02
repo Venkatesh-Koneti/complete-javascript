@@ -91,10 +91,10 @@ as internal scripting.
 #### External Scripts
 - If we write JavaScript in a separate file with extension .js, then we will call it as **external scripting**.
 - Example: Let’s assume the JavaScript file name is index.js
-    ```javascript
-        // JavaScript code
-        alert("Hello World!");
-    ```
+```js
+// JavaScript code
+alert("Hello World!");
+```
 - If we include third-party scripts like **jQuery, React, Bootstrap** (via CDN links), which are faster to load, then it is called **third-party scripting**.
 - jQuery, React, Bootstrap, Vue, Angular etc., are the frameworks built using JavaScript.
 - TypeScript is the sibling to JavaScript which can’t be executed directly in the browser unless it converts into plain JavaScript, also called as vanilla JavaScript.
@@ -105,16 +105,16 @@ as internal scripting.
 - JavaScript has two types of comments:
     - 1.Single Line comments using doubt slashes
     - Example:
-        ```
-            //your comment
-        ```
+      ```
+      //your comment
+      ```
     - 2.Mult-line comments using slash star.
     - Example:
-        ```
-            /* comment
-                one more comment
-            */
-        ```
+      ```
+      /* comment
+         one more comment
+      */
+      ```
 
 #### Variables
 JavaScript has 4 different types of variables.
