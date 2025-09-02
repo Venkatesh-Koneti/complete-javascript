@@ -175,9 +175,13 @@ name=name.toUpperCase(); // It will give desired output as we are reassigning ne
 - In any programming language, a String is sequence of characters used to represent text.
 
 **Example**
-``` let username=“Rajyalakshmi"```
+``` 
+let username=“Rajyalakshmi"
+```
 - We can use the below syntax to create string related data.
-```let username=new String(“Rajyalakshmi”);```
+```
+let username=new String(“Rajyalakshmi”);
+```
 - new String() is an object, it’s available for all the primitive data types except for null and undefined.
 
 #### 2.number  
@@ -185,24 +189,26 @@ name=name.toUpperCase(); // It will give desired output as we are reassigning ne
 
 **Example**
 ```
-let slides=5;
-or
-let slides=new Number(5); or Number(5)
+let slides = 5;                // Primitive Number
+let slidesObj = new Number(5); // Number object wrapper
+let slidesFn = Number(5);      // Converts to primitive number
 ```
 
 #### 3.Bigint
 - BigInt used to represent whole numbers larger than 2^53-1
 
 **Example**
-```Number.MAX_SAFE_INTEGER```
+```
+Number.MAX_SAFE_INTEGER
+```
 
 #### 4.Boolean
 - Boolean is a logical data type that can have only the values true or false.
 
 **Example**
 ```
-let isRunning = true;
-let isRecording = new Boolean(true);
+let isRunning = true;                // primitive boolean
+let isRecording = new Boolean(true); // Boolean object
 ```
 
 #### 5.Symbol
@@ -212,7 +218,9 @@ let isRecording = new Boolean(true);
 ```
 let sym1=Symbol(“name”);
 let sym2=Symbol(“name”);
-console.log(sym1===sym2) // false, as it create a unique value it will be
+console.log(sym1===sym2) 
+// false → Every Symbol() call creates a unique value, 
+// even if the description ("name") is the same
 ```
 
 #### 6.Undefined
