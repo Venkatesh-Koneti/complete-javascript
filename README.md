@@ -171,74 +171,90 @@ name.toUpperCase(); // We won’t get the desired output as it won’t mutate.
 name=name.toUpperCase(); // It will give desired output as we are reassigning new value.
 ```
 
-#### 1.string
-- In any programming language, a String is sequence of characters used to represent text.
+#### 1. String  
 
-**Example**
-``` 
-let username=“Rajyalakshmi"
-```
-- We can use the below syntax to create string related data.
-```
-let username=new String(“Rajyalakshmi”);
-```
-- new String() is an object, it’s available for all the primitive data types except for null and undefined.
+- A **string** is a sequence of characters used to represent text.  
+- Strings can be created in two ways:  
+  1. **String literal**  `"text"`  
+  2. **String object**   `new String("text")`  
+- Note: `new String()` creates an **object**, not a primitive. Wrapper objects are available for all primitives except `null` and `undefined`.  
 
-#### 2.number  
-- Number is a numeric data type in double precision of 64 bit floating point format. All the integers, floats, doubles are considered as Number only in JavaScript.
-
-**Example**
+**Example:**  
+```js
+let username = "Rajyalakshmi";                // String literal (primitive)
+let usernameObj = new String("Rajyalakshmi"); // String object (reference type)
 ```
-let slides = 5;                // Primitive Number
-let slidesObj = new Number(5); // Number object wrapper
+
+#### 2. Number  
+
+- A **number** in JavaScript represents both integers and floating-point values.  
+- JavaScript uses **64-bit floating point format** (so all ints, floats, and doubles are treated as `Number`).  
+- You can create numbers either as a **primitive** or as a **`Number` object**.  
+
+**Example:**  
+```js
+let slides = 5;                // Primitive number
+let slidesObj = new Number(5); // Number object (rarely used)
 let slidesFn = Number(5);      // Converts to primitive number
 ```
 
-#### 3.Bigint
-- BigInt used to represent whole numbers larger than 2^53-1
+#### 3. BigInt  
 
-**Example**
-```
-Number.MAX_SAFE_INTEGER
+- **BigInt** is used to represent whole numbers larger than 2^53 - 1 (the max safe integer in JavaScript).  
+- It’s created by appending n at the end of an integer.
+
+**Example:**  
+```js
+console.log(Number.MAX_SAFE_INTEGER); // 9007199254740991
+let big = 9007199254740995n;
+console.log(typeof big); // "bigint"
 ```
 
 #### 4.Boolean
-- Boolean is a logical data type that can have only the values true or false.
+
+- A boolean can only have two values: true or false.
+- Use primitive booleans instead of new Boolean() unless you explicitly need an object.
 
 **Example**
-```
-let isRunning = true;                // primitive boolean
-let isRecording = new Boolean(true); // Boolean object
+```js
+let isRunning = true;                // Primitive boolean
+let isRecording = new Boolean(true); // Boolean object (not recommended)
+console.log(typeof isRunning);       // "boolean"
+console.log(typeof isRecording);     // "object"
 ```
 
 #### 5.Symbol
-- Symbol creates an anonymous, unique value. It can be used as an object property.
+- A Symbol creates a unique and immutable value.
+- Even if two symbols have the same description, they are always different.
+- Symbols are often used as object property keys.
 
 **Example**
-```
-let sym1=Symbol(“name”);
-let sym2=Symbol(“name”);
-console.log(sym1===sym2) 
-// false → Every Symbol() call creates a unique value, 
-// even if the description ("name") is the same
+```js
+let sym1 = Symbol("name");
+let sym2 = Symbol("name");
+console.log(sym1 === sym2); // false, always unique
 ```
 
 #### 6.Undefined
-- undefined is a primitive value that will be assigned to variables whenever the variables are declared or which variables doesn’t have initial values.
+
+- A variable that is declared but not assigned a value automatically gets undefined.
+- It means "value not assigned".
 
 **Example**
-```
+```js
 let user;
-Console.log(user); //undefined
+console.log(user); // undefined
 ```
 
 #### 7.Null
-- Null used to represent a nonexistent or invalid object or address. Null is an object, so we can consider it has both primitive and reference type.
+- Null represents the intentional absence of any value.
+- Interestingly, typeof null returns "object" (a long-standing JavaScript bug).
 
 **Example**
-```
-let user=null;
-console.log(typeof user===“object”) // true
+```js
+let user = null;
+console.log(user);             // null
+console.log(typeof user);      // "object"
 ```
 
 ---
