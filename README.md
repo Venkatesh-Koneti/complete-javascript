@@ -181,8 +181,8 @@ name=name.toUpperCase(); // It will give desired output as we are reassigning ne
 
 **Example:**  
 ```js
-let username = "Rajyalakshmi";                // String literal (primitive)
-let usernameObj = new String("Rajyalakshmi"); // String object (reference type)
+let username = "Venkatesh";                // String literal (primitive)
+let usernameObj = new String("Venkatesh"); // String object (reference type)
 ```
 
 #### 2. Number  
@@ -334,12 +334,10 @@ console.log(admin); // { name: "Venkatesh", role: "Admin" }
 console.log(user === admin); // true (both share the same reference)
 ```
 
----
-
 #### Operators in JavaScript
 JavaScript provides different types of operators to perform operations on values and variables.
 
-### Arithmetic Operators
+**Arithmetic Operators**
 Arithmetic operators perform arithmetic on numbers (literals or variables).
 - `+` → Addition (`5 + 3 = 8`)
 - `-` → Subtraction (`5 - 3 = 2`)
@@ -350,7 +348,7 @@ Arithmetic operators perform arithmetic on numbers (literals or variables).
 - `++` → Increment (`let a = 5; a++ → 6`)
 - `--` → Decrement (`let b = 5; b-- → 4`)
 
-### Assignment Operators
+**Assignment Operators**
 Assignment operators assign values to JavaScript variables.
 - `=` → Assign (`x = 10`)
 - `+=` → Add and assign (`x += 5 → x = x + 5`)
@@ -359,7 +357,7 @@ Assignment operators assign values to JavaScript variables.
 - `/=` → Divide and assign (`x /= 4 → x = x / 4`)
 - `%=` → Modulus and assign (`x %= 2 → x = x % 2`)
 
-### Comparison Operators
+**Comparison Operators**
 Comparison operators are used to test values and return `true` or `false`.
 - `==` → Equal to (checks value only) (`5 == "5" → true`)
 - `===` → Strict equal (checks value + type) (`5 === "5" → false`)
@@ -370,7 +368,7 @@ Comparison operators are used to test values and return `true` or `false`.
 - `>=` → Greater than or equal (`7 >= 7 → true`)
 - `<=` → Less than or equal (`5 <= 5 → true`)
 
-### Logical Operators
+**Logical Operators**
 Logical operators are used to combine conditions:
 - `&&` → Logical AND (`true && false → false`)
 - `||` → Logical OR (`true || false → true`)
@@ -380,22 +378,22 @@ Logical operators are used to combine conditions:
 
 JavaScript is **single-threaded** and uses a **JavaScript Engine** (like V8 in Chrome). The execution process happens in steps:
 
-### 1. Compilation (Creation) Phase
+**1. Compilation (Creation) Phase**
 - Memory is allocated for variables and functions.
 - Variables are initialized with `undefined`.
 - Functions are stored entirely in memory.
 - A **Global Execution Context (GEC)** is created.
 
-### 2. Execution Phase
+**2. Execution Phase**
 - Code is executed line by line.
 - Variables get their actual values.
 - Functions are invoked, creating **Function Execution Contexts** that are placed in the **Call Stack**.
 
-### 3. Call Stack
+**3. Call Stack**
 - JavaScript uses a **stack structure** to manage function calls.
 - The last function pushed is executed first (**LIFO → Last In, First Out**).
 
-### 4. Event Loop + Callback Queue (for async tasks)
+**4. Event Loop + Callback Queue (for async tasks)**
 - Long tasks (`setTimeout`, `fetch`, `promises`) are handled by Web APIs.
 - Once complete, callbacks are placed in the **Callback Queue**.
 - The **Event Loop** moves them into the Call Stack when it’s empty.
@@ -408,12 +406,12 @@ JavaScript is **single-threaded** and uses a **JavaScript Engine** (like V8 in C
 The **global object** is the top-level object in JavaScript.  
 It provides built-in functions and properties that can be accessed anywhere in the program.
 
-### Global Object in Different Environments
+**Global Object in Different Environments**
 - **Browser** → `window`
 - **Node.js** → `global`
 - **Modern JS (Universal)** → `globalThis` (works in both)
 
-### Examples
+**Examples**
 ```js
 console.log(this);        // window (in browsers, in non-strict mode)
 console.log(globalThis);  // works everywhere
