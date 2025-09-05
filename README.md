@@ -396,6 +396,7 @@ JavaScript is **single-threaded** and uses a **JavaScript Engine** (like V8 in C
 - The **Event Loop** moves them into the Call Stack when it’s empty.
 - This makes JavaScript **non-blocking** even though it is single-threaded.
 
+<img src="week-1/day-2/images/executionProcess.png" alt="Theme Example" width="300" height="300">
 ---
 
 #### Global Object in JavaScript
