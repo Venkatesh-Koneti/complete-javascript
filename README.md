@@ -338,7 +338,7 @@ console.log(user === admin); // true (both share the same reference)
 JavaScript provides different types of operators to perform operations on values and variables.
 
 **Arithmetic Operators**
-Arithmetic operators perform arithmetic on numbers (literals or variables).
+- Arithmetic operators perform arithmetic on numbers (literals or variables).
 - `+` → Addition (`5 + 3 = 8`)
 - `-` → Subtraction (`5 - 3 = 2`)
 - `*` → Multiplication (`5 * 3 = 15`)
@@ -349,7 +349,7 @@ Arithmetic operators perform arithmetic on numbers (literals or variables).
 - `--` → Decrement (`let b = 5; b-- → 4`)
 
 **Assignment Operators**
-Assignment operators assign values to JavaScript variables.
+- Assignment operators assign values to JavaScript variables.
 - `=` → Assign (`x = 10`)
 - `+=` → Add and assign (`x += 5 → x = x + 5`)
 - `-=` → Subtract and assign (`x -= 3 → x = x - 3`)
