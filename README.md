@@ -397,7 +397,6 @@ JavaScript is **single-threaded** and uses a **JavaScript Engine** (like V8 in C
 - This makes JavaScript **non-blocking** even though it is single-threaded.
 
 <img src="week-1/day-2/images/executionProcess.png" alt="Theme Example" width="300" height="300">
----
 
 #### Global Object in JavaScript
 
@@ -407,9 +406,9 @@ JavaScript is **single-threaded** and uses a **JavaScript Engine** (like V8 in C
 - Every function or property that we use directly is already available in the Global Object.  
 - We can access them directly or by using `window.property` or `window.functionName()`.  
 
-- **In Browser:** `window`  
-- **In Node.js:** `global`  
-- **In Modern JavaScript (Universal):** `globalThis`  
+   **In Browser:** `window`  
+   **In Node.js:** `global`  
+   **In Modern JavaScript (Universal):** `globalThis`  
 
 **Examples (Browser):**  
 ```javascript
