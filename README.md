@@ -336,6 +336,101 @@ console.log(user === admin); // true (both share the same reference)
 
 ---
 
+#### Operators in JavaScript
+JavaScript provides different types of operators to perform operations on values and variables.
+
+### Arithmetic Operators
+Arithmetic operators perform arithmetic on numbers (literals or variables).
+- `+` → Addition (`5 + 3 = 8`)
+- `-` → Subtraction (`5 - 3 = 2`)
+- `*` → Multiplication (`5 * 3 = 15`)
+- `/` → Division (`6 / 2 = 3`)
+- `%` → Modulus (remainder) (`7 % 3 = 1`)
+- `**` → Exponentiation (`2 ** 3 = 8`)
+- `++` → Increment (`let a = 5; a++ → 6`)
+- `--` → Decrement (`let b = 5; b-- → 4`)
+
+### Assignment Operators
+Assignment operators assign values to JavaScript variables.
+- `=` → Assign (`x = 10`)
+- `+=` → Add and assign (`x += 5 → x = x + 5`)
+- `-=` → Subtract and assign (`x -= 3 → x = x - 3`)
+- `*=` → Multiply and assign (`x *= 2 → x = x * 2`)
+- `/=` → Divide and assign (`x /= 4 → x = x / 4`)
+- `%=` → Modulus and assign (`x %= 2 → x = x % 2`)
+
+### Comparison Operators
+Comparison operators are used to test values and return `true` or `false`.
+- `==` → Equal to (checks value only) (`5 == "5" → true`)
+- `===` → Strict equal (checks value + type) (`5 === "5" → false`)
+- `!=` → Not equal (`5 != 3 → true`)
+- `!==` → Strict not equal (`5 !== "5" → true`)
+- `>` → Greater than (`7 > 5 → true`)
+- `<` → Less than (`7 < 5 → false`)
+- `>=` → Greater than or equal (`7 >= 7 → true`)
+- `<=` → Less than or equal (`5 <= 5 → true`)
+
+### Logical Operators
+Logical operators are used to combine conditions:
+- `&&` → Logical AND (`true && false → false`)
+- `||` → Logical OR (`true || false → true`)
+- `!` → Logical NOT (`!true → false`)
+
+#### How JavaScript Executes Programs
+
+JavaScript is **single-threaded** and uses a **JavaScript Engine** (like V8 in Chrome). The execution process happens in steps:
+
+### 1. Compilation (Creation) Phase
+- Memory is allocated for variables and functions.
+- Variables are initialized with `undefined`.
+- Functions are stored entirely in memory.
+- A **Global Execution Context (GEC)** is created.
+
+### 2. Execution Phase
+- Code is executed line by line.
+- Variables get their actual values.
+- Functions are invoked, creating **Function Execution Contexts** that are placed in the **Call Stack**.
+
+### 3. Call Stack
+- JavaScript uses a **stack structure** to manage function calls.
+- The last function pushed is executed first (**LIFO → Last In, First Out**).
+
+### 4. Event Loop + Callback Queue (for async tasks)
+- Long tasks (`setTimeout`, `fetch`, `promises`) are handled by Web APIs.
+- Once complete, callbacks are placed in the **Callback Queue**.
+- The **Event Loop** moves them into the Call Stack when it’s empty.
+- This makes JavaScript **non-blocking** even though it is single-threaded.
+
+---
+
+#### Global Object in JavaScript
+
+The **global object** is the top-level object in JavaScript.  
+It provides built-in functions and properties that can be accessed anywhere in the program.
+
+### Global Object in Different Environments
+- **Browser** → `window`
+- **Node.js** → `global`
+- **Modern JS (Universal)** → `globalThis` (works in both)
+
+### Examples
+```js
+console.log(this);        // window (in browsers, in non-strict mode)
+console.log(globalThis);  // works everywhere
+
+// Global functions
+console.log(isNaN("abc"));   // true
+console.log(parseInt("42")); // 42
+
+// Global variables attached to window
+var x = 10;
+console.log(window.x); // 10 (in browsers)
+
+// But let/const are NOT added to the global object
+let y = 20;
+console.log(window.y); // undefined
+```
+
 ### Week 2 – Fundamentals & Interacting With Users
 **Day 3**
 - Conditional statements (if, ternary, switch)  
