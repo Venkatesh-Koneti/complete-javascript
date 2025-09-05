@@ -401,28 +401,35 @@ JavaScript is **single-threaded** and uses a **JavaScript Engine** (like V8 in C
 
 #### Global Object in JavaScript
 
-The **global object** is the top-level object in JavaScript.  
-It provides built-in functions and properties that can be accessed anywhere in the program.
+**Global Object:**&nbsp;The global object contains built-in methods and properties that can be accessed anywhere in JavaScript.
 
-**Global Object in Different Environments**
-- **Browser** → `window`
-- **Node.js** → `global`
-- **Modern JS (Universal)** → `globalThis` (works in both)
+- The Global Object contains default browser methods such as `alert`, `confirm`, `prompt`, `setTimeout`, etc.  
+- Every function or property that we use directly is already available in the Global Object.  
+- We can access them directly or by using `window.property` or `window.functionName()`.  
 
-**Examples**
-```js
-console.log(this);        // window (in browsers, in non-strict mode)
-console.log(globalThis);  // works everywhere
+- **In Browser:** `window`  
+- **In Node.js:** `global`  
+- **In Modern JavaScript (Universal):** `globalThis`  
+
+**Examples (Browser):**  
+```javascript
+// Browser globals
+window.alert("Hello World!");
+window.localStorage;
+
+// Global object references
+console.log(this);        // window (in browsers, non-strict mode)
+console.log(globalThis);  // works in all environments
 
 // Global functions
 console.log(isNaN("abc"));   // true
 console.log(parseInt("42")); // 42
 
-// Global variables attached to window
+// Global variables with var
 var x = 10;
 console.log(window.x); // 10 (in browsers)
 
-// But let/const are NOT added to the global object
+// let/const are not added to global object
 let y = 20;
 console.log(window.y); // undefined
 ```
