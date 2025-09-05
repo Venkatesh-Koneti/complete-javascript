@@ -432,6 +432,7 @@ console.log(window.x); // 10 (in browsers)
 let y = 20;
 console.log(window.y); // undefined
 ```
+--- 
 
 ### Week 2 – Fundamentals & Interacting With Users
 **Day 3**
@@ -439,6 +440,135 @@ console.log(window.y); // undefined
 - Loops (for, while, do-while, nested)  
 - Break and continue  
 - Small exercises  
+
+___
+
+#### Conditional
+- **if** → Specify a block of code to be executed if a specified condition is true.  
+- **else** → Specify a block of code to be executed if the same condition is false.  
+- **else if** → Specify a new condition to test, if the first condition is false.  
+
+**Example:**
+```javascript
+if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good night";
+}
+```
+
+#### Ternary
+- The ternary operator (? :) is used to handle simple conditions.
+- If the condition is true, one value is returned; otherwise, another value is returned.
+- Best used when handling only two conditions (true or false).
+```
+let age = 20;
+let result = (age >= 18) ? "Adult" : "Minor";
+console.log(result); // Adult
+```
+
+#### Switch Statements
+- switch is used to specify many alternative blocks of code to be executed.
+- The switch expression is evaluated once.
+- Its value is compared with the values of each case.
+- If there is a match, the associated block of code is executed.
+- If no match is found, the default block is executed.
+- When JavaScript reaches a break keyword, it breaks out of the switch block.
+- Switch uses strict comparison (===).
+
+```
+let day = 2;
+
+switch(day) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  default:
+    console.log("Other day");
+}
+```
+
+#### For loop
+
+- Loops can execute a block of code a number of times.
+**Example**
+```js
+var cars = ['A', 'B', 'C'];
+for (var i = 0; i < cars.length; i++) {
+  console.log(cars[i]);
+}
+```
+
+- For/in - Loop through the properties of object/Array.
+**Example**
+```js
+let person = {name: "John", age: 30};
+for (let key in person) {
+  console.log(key + ": " + person[key]);
+}
+```
+
+- For/of – loop through the values of iterable object.
+**Example**
+```js
+let users = ["Alice", "Bob", "Charlie"];
+for (let user of users) {
+  console.log(user);
+}
+```
+
+#### While Loop, Do-While Loop
+- Loops can execute a block of code as long as a specified condition is true
+**While Loop Example**
+```js
+let i = 0;
+while (i < 3) {
+  console.log(i);
+  i++;
+}
+```
+
+**do/while Loop**
+- The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+```js
+let j = 0;
+do {
+  console.log(j);
+  j++;
+} while (j < 3);
+```
+
+**Nested Loop**
+- Loops inside loops are known as Nested Loops, these will be used to iterate multi-dimensional arrays.
+```
+let matrix = [
+  [1, 2],
+  [3, 4],
+  [5, 6]
+];
+
+for (let row of matrix) {
+  for (let value of row) {
+    console.log(value);
+  }
+}
+```
+
+#### Break and Continue
+- The break statement "jumps out" of a loop.
+- The continue statement "jumps over" one iteration in the loop.
+- Break used to “jumps out” of a switch block or loop.
+- Continue used to skip one iteration in the loop.
+```js
+for (let i = 0; i < 5; i++) {
+  if (i === 3) break;       // exits loop when i = 3
+  if (i === 1) continue;    // skips iteration when i = 1
+  console.log(i);
+}
+```
 
 **Day 4**
 - Prompt, Alert, Confirm  
