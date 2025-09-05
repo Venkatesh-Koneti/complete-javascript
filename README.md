@@ -337,8 +337,7 @@ console.log(user === admin); // true (both share the same reference)
 #### Operators in JavaScript
 JavaScript provides different types of operators to perform operations on values and variables.
 
-**Arithmetic Operators: **
-Arithmetic operators perform arithmetic on numbers (literals or variables).
+**Arithmetic Operators:** Arithmetic operators perform arithmetic on numbers (literals or variables).
 - `+` → Addition (`5 + 3 = 8`)
 - `-` → Subtraction (`5 - 3 = 2`)
 - `*` → Multiplication (`5 * 3 = 15`)
@@ -348,8 +347,7 @@ Arithmetic operators perform arithmetic on numbers (literals or variables).
 - `++` → Increment (`let a = 5; a++ → 6`)
 - `--` → Decrement (`let b = 5; b-- → 4`)
 
-**Assignment Operators: **
-Assignment operators assign values to JavaScript variables.
+**Assignment Operators:** Assignment operators assign values to JavaScript variables.
 - `=` → Assign (`x = 10`)
 - `+=` → Add and assign (`x += 5 → x = x + 5`)
 - `-=` → Subtract and assign (`x -= 3 → x = x - 3`)
@@ -357,8 +355,7 @@ Assignment operators assign values to JavaScript variables.
 - `/=` → Divide and assign (`x /= 4 → x = x / 4`)
 - `%=` → Modulus and assign (`x %= 2 → x = x % 2`)
 
-**Comparison Operators: **
-Comparison operators are used to test values and return `true` or `false`.
+**Comparison Operators:** Comparison operators are used to test values and return `true` or `false`.
 - `==` → Equal to (checks value only) (`5 == "5" → true`)
 - `===` → Strict equal (checks value + type) (`5 === "5" → false`)
 - `!=` → Not equal (`5 != 3 → true`)
@@ -368,8 +365,8 @@ Comparison operators are used to test values and return `true` or `false`.
 - `>=` → Greater than or equal (`7 >= 7 → true`)
 - `<=` → Less than or equal (`5 <= 5 → true`)
 
-**Logical Operators: **
-Logical operators are used to combine conditions:
+**Logical Operators:** Logical operators are used to combine conditions
+
 - `&&` → Logical AND (`true && false → false`)
 - `||` → Logical OR (`true || false → true`)
 - `!` → Logical NOT (`!true → false`)
